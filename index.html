@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkpoint 01 Frontend II</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js" defer></script>
+</head>
+<body>
+
+    <!-- FORMULÁRIO DE CADASTRO -->
+    <section class="forms">
+    <form id="formCard">
+        <h1 class="tittle">Checkpoint 1</h1>
+        <input type="text" name="titulo" id="titulo" class="form_input" placeholder="Digite o título" required minlength="4">
+        <input type="text" name="description" id="description" class="form_input" placeholder="Digite a descrição" required minlength="4">
+        <input type="url" name="url" id="url" class="form_input" placeholder="Digite a URL" required>
+        <input type="submit" value="Enviar" id="btn_enviar">
+    </form>
+    </section>
+
+    <!-- CONTAINER DE CARDS -->
+
+    <h2 id="tittleCards">Cards</h2>
+
+    <section id="container" class="container">
+
+        <div class="cards">
+            <h2 id="tituloCard1" class="cardTittle">Título</h2>
+            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus nam rem laudantium blanditiis natus delectus. Vero, dolorum soluta possimus quam non sequi veritatis perspiciatis. Vel inventore consequuntur perferendis laboriosam quibusdam.</p>
+            <img class="img-card" src="https://diariodonordeste.verdesmares.com.br/image/contentid/policy:1.3211966:1648818688/Copa-do-Mundo.jpg?f=16x9&h=720&q=0.8&w=1280&$p$f$h$q$w=3096e3e" alt="">
+        </div>
+
+        <div class="cards">
+            <h2 class="cardTittle">Título</h2>
+            <p class="description">Lorem ipsum dolor quibusdam.</p>
+            <img class="img-card" src="https://diariodonordeste.verdesmares.com.br/image/contentid/policy:1.3211966:1648818688/Copa-do-Mundo.jpg?f=16x9&h=720&q=0.8&w=1280&$p$f$h$q$w=3096e3e" alt="">
+        </div>
+
+    </section>
+    
+    <footer class="footer">
+        <p class="footerText">Grupo 9: Luiz Fernando, Maycon, Samuel</p>
+    </footer>
+   
+</body>
+</html>

@@ -1,0 +1,128 @@
+/* RESET CSS */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* FORMATAÇÃO DO BACKGROUND DA PÁGINA */
+
+body{
+    background-color: #5ec5b0;
+}
+
+/* FORMATAÇÃO DO FORMUÁRIO */
+
+form{
+    background-color: rgb(243, 243, 243);
+    max-width: 500px;
+    width: 70%;
+    padding: 20px;
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 20px;
+    /* FORMATAÇÃO PARA TRATAR O FORMULÁRIO COMO MODAL -> CRIANDO OUTRA PÁGINA PARA OS CARDS */
+    /* position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%); */
+}
+
+.tittle{
+    text-align: center;
+    color: #5ec5b0;
+    font-size: 2.5rem;
+}
+
+.form_input{
+    width: 100%;
+    height: 45px;
+    border: 1px solid #5ec5b0;
+    padding-left: 10px;
+    margin: 10px 0px;
+    border-radius: 10px;
+    outline: none;
+}
+
+#btn_enviar{
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    background-color: #5ec5b0;
+    color: white;
+    border: 0;
+    transition: .5s;
+    border-radius: 10px;
+    margin-top: 10px;
+    display: none;
+}
+
+#btn_enviar:hover{
+    background-color: whitesmoke;
+    color: #5ec5b0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: 1px solid #5ec5b0;
+}
+
+/* FORMATAÇÃO DOS CARDS */
+
+#tittleCards{
+    color: whitesmoke;
+    text-align: center;
+    margin: 30px;
+    font-size: 2rem;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding: 50px;
+    justify-content: space-between;
+    background-color: #72dcc7;
+    border-radius: 16px;
+    -webkit-box-shadow: -7px 8px 21px 0px rgba(0,0,0,0.51);
+    -moz-box-shadow: -7px 8px 21px 0px rgba(0,0,0,0.51);
+    box-shadow: -7px 8px 21px 0px rgba(0,0,0,0.51);
+}
+
+.cards{
+    background-color: #479b8a;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 300px;
+    border-radius: 12px;
+    min-height: 400px;
+    -webkit-box-shadow: -7px 8px 21px 0px rgba(0,0,0,0.51);
+    -moz-box-shadow: -7px 8px 21px 0px rgba(0,0,0,0.51);
+    box-shadow: -7px 8px 21px 0px rgba(0,0,0,0.51);
+}
+
+.cardTittle{
+    text-align: center;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+.description{
+    text-align: center;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+.img-card{
+    border-radius: 0 0px 12px 12px;
+}
+
+/* FORMATAÇÃO DO FOOTER */
+
+.footer{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 20px;
+}
