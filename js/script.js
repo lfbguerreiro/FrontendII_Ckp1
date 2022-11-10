@@ -1,6 +1,37 @@
 // CRIANDO A VARIÁVEL PARA ATRELAR AO CLICK
 
 var btn = document.getElementById("btn_enviar");
+var titulo = document.getElementById('titulo');
+
+btn.addEventListener('click', function(){
+    console.log('Você clicou no botão Salvar');
+})
+
+//VALIDAÇÃO DOS CAMPOS
+
+titulo.addEventListener('focus', function(){
+    console.log('clicou no campo')
+    titulo.style.backgroundColor = '#dadad8'
+})
+
+titulo.addEventListener('keyup', function(){
+    console.log('Saiu do campo');
+    
+    let tituloValidacao = document.getElementById('tituloValidacao');
+
+    if(titulo.value.length>=4){
+        console.log('Validação passou');
+        tituloValidacao.innerText = "";
+        btn.removeAttribute ('disabled')
+        
+    }else{
+        console.log('Validação não passou');
+        tituloValidacao.innerText = "Mínimo de 4 caracteres";
+        tituloValidacao.style.fontWeight = 'bold';
+        tituloValidacao.style.color = 'red'
+        titulo.style.backgroundColor = "#FFFFFF";        
+    }
+})
 
 
 
@@ -12,13 +43,6 @@ btn.addEventListener('click', function(event){
     console.log(card.titulo.value);
     console.log(card.description.value);
     console.log(card.url.value);
-
-    document.addEventListener('keydown', function(){
-        if(card.titulo.lenght < 4){
-            btn.style.display = 'block'
-        
-        }
-    })
 
       // CRIA O ELEMENTO CARD
       var criarCard = document.createElement("div");

@@ -55,7 +55,6 @@ form{
     transition: .5s;
     border-radius: 10px;
     margin-top: 10px;
-    display: none;
 }
 
 #btn_enviar:hover{
